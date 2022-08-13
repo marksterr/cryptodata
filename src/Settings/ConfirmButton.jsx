@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import {AppContext} from '../App/AppProvider'
-import {fontSize1, greenBoxShadow, color3} from '../Shared/Styles'
+import { AppContext } from '../App/AppProvider'
+import { fontSize1, greenBoxShadow, color3 } from '../Shared/Styles'
 
 const ConfirmButtonStyled = styled.div`
   margin: 20px;
@@ -18,10 +18,10 @@ export const CenterDiv = styled.div`
   justify-content: center;
 `
 
-export default function(){
+export default function () {
   return (
     <AppContext.Consumer>
-      {({confirmFavorites}) => 
+      {({ confirmFavorites }) =>
         <CenterDiv>
           <ConfirmButtonStyled onClick={confirmFavorites}>
             Confirm Favorites

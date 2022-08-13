@@ -8,7 +8,7 @@ const Logo = styled.div`
 const Bar = styled.div`
   display: grid;
   margin-bottom: 40px;
-  grid-template-columns: 180px auto 100px 100px;
+  grid-template-columns: 100px 100px auto 180px;
 `
 
 const ControlButtonElem = styled.div`
@@ -44,10 +44,10 @@ function ControlButton({name}){
 export default function(){
   return (
     <Bar> 
-      <Logo> CryptoData </Logo>
-      <div/>
       <ControlButton active name="dashboard"/>
       <ControlButton name="settings"/>
+      <div/>
+      <Logo> CoinView </Logo>
     </Bar>
   )
 }
